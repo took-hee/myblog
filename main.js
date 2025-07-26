@@ -354,12 +354,9 @@ function initScrollIndicator() {
         scrollIndicator.addEventListener('click', function() {
             const nextSection = document.querySelector('.section');
             if (nextSection) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = nextSection.offsetTop - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+                nextSection.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center'
                 });
             }
         });
