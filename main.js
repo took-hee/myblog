@@ -355,7 +355,7 @@ function initScrollIndicator() {
             const nextSection = document.querySelector('.section');
             if (nextSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = nextSection.offsetTop - headerHeight - 120;
+                const targetPosition = nextSection.offsetTop - headerHeight - 20;
                 
                 window.scrollTo({
                     top: targetPosition,
