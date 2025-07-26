@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileNavigation();
     
     // 검색 기능
-    initSearch();
+    //initSearch();
     
     // 스크롤 애니메이션
     initScrollAnimations();
     
     // 카테고리 필터
-    initCategoryFilter();
+    //initCategoryFilter();
     
     // 부드러운 스크롤
     initSmoothScroll();
