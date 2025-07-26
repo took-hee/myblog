@@ -184,9 +184,9 @@ a:hover {
 }
 
 /* main.css에 추가 */
-.section-latest-article {
-    padding-top: 12vh !important;
-    padding-bottom: 12vh !important;
+.section-latest-article { 
+    padding-top: 14vh !important; /* 수정중 */
+    padding-bottom: 14vh !important;
 }
 
 /* 히어로 섹션 */
