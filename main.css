@@ -185,9 +185,8 @@ a:hover {
 
 /* main.css에 추가 */
 .section-latest-article {
-    padding-top: 2vh !important;
-    padding-bottom: 2vh !important;
-    background-color: red !important;  /* 변화 확인용 */
+    padding-top: 6vh !important;
+    padding-bottom: 6vh !important;
 }
 
 /* 히어로 섹션 */
