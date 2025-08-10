@@ -1,33 +1,62 @@
 ---
 layout: page
-title: About Monochrome
-description: This page describes monochrome.
+title: 정원사 소개
+description: 정원사 툭히와 마음의 정원 소개
 ---
-## About
-Monochrome is a minimal, responsive theme created for Jekyll. The goal of Monochrome is to provide a ready to use, plug and play theme for those who want to set up a blog, and focus solely on the content.
 
-## Features
+# 안녕하세요, 정원사 툭히입니다
 
-- Completely responsive and mobile first
-- Clean SEO friendly URLs, auto-generated from post title (no messy dates in the url)
-- SEO title/description integration
-- Sitemap ready
-- Easy customization for header, footer, navigation links, colors, favicon etc
-- Default Monochrome Color Palette - black, white, greys
+> "막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
 
-### Setup
+우울증과 공황장애를 겪던 시절, 조금은 늦은 나이에 대학에 들어갔습니다.
 
-Monochrome may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/thereviewindex/monochrome/archive/master.zip).
+비슷한 아픔을 가진 사람들을 돕고 싶어 상담심리학을 전공했지만, 실제 그 과정은 생각과 달랐습니다.
 
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/monochrome/`` and you will find it there.
+누군가에게 힘이 되고 싶어 시작한 공부가 그동안 외면했던 '나'를 마주하는 시간이었고, 그 과정이 얼마나 맵던지..
 
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Monochrome in the root. 
+하지만 '나를 이해함'은 마음의 돌덩이들을 하나둘 내려놓게 했고, 시간이 흐른 지금은 건강함 속에 살아가고 있습니다.
 
+다시 돌아가고 싶진 않습니다. 그러나 그 시간이 저에게 의미있었기에, 그 기억을 담아 '마음의 정원'을 가꾸고 있습니다.
 
+---
 
-For further details on Monochrome, please visit the [repository on Github](https://github.com/thereviewindex/monochrome/).
+<h2 class="section-title">쌓아온 경험과 배움</h2>
 
-![Monochrome](img/monochrome01.png "monochrome")
+<div class="grid grid-3">
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">💡 이런 걸 배웠어요</h3>
+      <ul>
+        <li><strong>상담심리학부 청소년상담학 전공</strong><br><small>사회복지학 복수전공</small></li>
+        <li><strong>전직지원 전문가 입문과정</strong><br><small>한국기술교육대학교</small></li>
+        <li><strong>취업희망 프로그램 진행자 양성교육</strong><br><small>한국고용정보원</small></li>
+        <li><strong>청년층고용지원과정</strong><br><small>한국기술교육대학교</small></li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">📜 이런 자격을 갖췄어요</h3>
+      <ul>
+        <li><strong>사회복지사 1급</strong><br><small>보건복지부</small></li>
+        <li><strong>직업상담사 2급</strong><br><small>고용노동부</small></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">💼 이런 일들을 해왔어요</h3>
+      <ul>
+        <li><strong>구직단념 청년 지원사업 기획 및 운영</strong><br><small>청년도전 지원사업 실무 담당</small></li>
+        <li><strong>지자체 교육사업 기획 및 운영</strong><br><small>사업계획 수립 및 성과관리</small></li>
+        <li><strong>고용노동부 취업지원제도</strong><br><small>국민취업지원제도 전담상담사</small></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+---
 
+**연락처**: [gardener.tookhee@gmail.com](mailto:gardener.tookhee@gmail.com)
