@@ -1,0 +1,39 @@
+# Site settings
+title: 마음의 정원
+description: "내가 좋아하는건 뭔지, 내가 잘하는건 뭔지, 나에 대해 아는 것이 없다고 느껴질때 마음의 정원으로 오세요."
+url: "https://took-hee.github.io/myblog"
+author:
+  name: "툭히(took-hee)"
+  email: "gardener.tookhee@gmail.com"  
+  url: "https://took-hee.github.io/myblog"
+
+# Build settings
+baseurl: /myblog  # 여기가 중요합니다!
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
