@@ -4,6 +4,53 @@ title: 정원사 소개
 description: 정원사 툭히와 마음의 정원 소개
 ---
 
+<style>
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.card-content ul {
+  list-style: none;
+  padding: 0;
+}
+.card-content li {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
 # 안녕하세요, 정원사 툭히입니다
 
 > "막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
