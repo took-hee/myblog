@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 정원사 소개
+title: About
 description: 정원사 툭히와 마음의 정원 소개
 ---
 
@@ -95,6 +95,130 @@ hr {
   border: none;
   border-top: 2px solid #e9ecef;
 }
+
+/* 페이지 전체 스타일링 */
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/* 제목 스타일 */
+#page h1 {
+  text-align: center;
+  margin: 2rem auto;
+  color: #2c5f2d;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 인용구 스타일 */
+blockquote {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem auto;
+  max-width: 600px;
+  color: #5a6c5d;
+  font-size: 1.2rem;
+  border-left: 4px solid #97c93d;
+  padding-left: 1rem;
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* 본문 텍스트 */
+#page > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  color: #4a5c4a;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* 카드 스타일 개선 */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f0f4f7);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c5f2d;
+  text-align: center;
+}
+
+/* 섹션 제목 */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #2c5f2d;
+  font-weight: 700;
+}
+
+/* 리스트 아이템 */
+.card-content li {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  border-bottom: 1px solid #e1e8ed;
+  background: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.card-content li strong {
+  color: #2c5f2d;
+}
+
+.card-content li small {
+  color: #6b7c6b;
+}
+
+/* 연락처 섹션 */
+.text-center {
+  text-align: center;
+  color: #4a5c4a;
+  font-size: 1.1rem;
+}
+
+/* 수평선 */
+hr {
+  max-width: 400px;
+  margin: 3rem auto;
+  border: none;
+  border-top: 3px solid #97c93d;
+  border-radius: 2px;
+}
+
+/* 링크 스타일 */
+a {
+  color: #2c5f2d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #97c93d;
+  text-decoration: underline;
+}
 </style>
 
 # 안녕하세요, 정원사 툭히입니다
@@ -183,8 +307,6 @@ hr {
     </div>
   </div>
 </div>
-
----
 
 ---
 
