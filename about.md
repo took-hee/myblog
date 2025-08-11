@@ -104,7 +104,7 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #f5f7fa 100%);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -207,7 +207,7 @@ hr {
   max-width: 400px;
   margin: 3rem auto;
   border: none;
-  border-top: 3px solid #97c93d;
+  border-top: 3px solid #ffffff;
   border-radius: 2px;
 }
 
