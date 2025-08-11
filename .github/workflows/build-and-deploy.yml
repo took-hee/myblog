@@ -6,7 +6,7 @@ on:
   push:
     branches: [ main ]  # main 브랜치에 푸시할 때
   schedule:
-    - cron: '0 0 * * *'  # 매일 자정(UTC)에 실행
+    - cron: '0 11 * * *'  # 매일 밤 8시(KST)에 실행 (UTC 11시 = KST 20시)
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
