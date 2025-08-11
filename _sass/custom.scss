@@ -120,6 +120,18 @@ footer span {
   line-height: 1.6;
 }
 
+/* 메인 페이지 헤더 숨김 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .grid-3 {
