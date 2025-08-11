@@ -4,45 +4,21 @@
  <title>마음의 정원</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <id>http://localhost:4000</id>
- <updated>2025-08-11T12:36:01+09:00</updated>
+ <updated>2025-08-11T19:17:56+09:00</updated>
  <author>
    <name>툭히(took-hee)</name>
-   <uri>https://took-hee.github.io/myblog</uri>
+   <uri>https://www.tookheelab.com</uri>
    <email>gardener.tookhee@gmail.com</email>
  </author>
 
  
 
  <entry>
-   <title>테스트 중</title>
-   <link href="http://localhost:4000/%EC%B2%AB-%ED%8F%AC%EC%8A%A4%ED%8A%B8"/>
-   <id>http://localhost:4000/첫-포스트</id>
-   <updated>2025-08-11T00:00:00+09:00</updated>
-   <content type="html">&lt;h1 id=&quot;포스트-제목&quot;&gt;포스트 제목&lt;/h1&gt;
-
-&lt;p&gt;포스트 내용을 여기에 작성합니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;소제목&quot;&gt;소제목&lt;/h2&gt;
-
-&lt;p&gt;마크다운 문법으로 자유롭게 작성하세요.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;리스트&lt;/li&gt;
-  &lt;li&gt;항목들&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;굵은 글씨&lt;/strong&gt;도 가능합니다.&lt;/p&gt;
-</content>
- </entry>
-
- 
-
- <entry>
-   <title>테스트</title>
-   <link href="http://localhost:4000/thereviewindex-introduction"/>
-   <id>http://localhost:4000/thereviewindex-introduction</id>
-   <updated>2017-02-18T00:00:00+09:00</updated>
-   <content type="html">&lt;p&gt;The internet is a source of a humongous amount of unstructured content for all sorts of products, in the form of blogs, videos, user and expert reviews, etc. It is almost impossible for anyone to scour all of this disparate data, with contradictory opinions, and thereafter make a correct, or...</content>
+   <title>토니 스타크가 되려다 잃어버릴 뻔한 자기 신뢰</title>
+   <link href="http://localhost:4000/%ED%86%A0%EB%8B%88-%EC%8A%A4%ED%83%80%ED%81%AC%EA%B0%80-%EB%90%98%EB%A0%A4%EB%8B%A4-%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B4-%EB%BB%94%ED%95%9C-%EC%9E%90%EA%B8%B0-%EC%8B%A0%EB%A2%B0"/>
+   <id>http://localhost:4000/토니-스타크가-되려다-잃어버릴-뻔한-자기-신뢰</id>
+   <updated>2025-08-11T14:00:00+09:00</updated>
+   <content type="html">&lt;p&gt;&lt;!-- 본문 시작 --&gt;&lt;/p&gt; &lt;h2 style=&quot;font-size: 1.5rem; font-weight: 700; color: #22304b; margin-top: 1.5em; margin-bottom: 0.8em; line-height: 1.2; &quot;&gt; 자비스로 인해 시작된 AI 중독 &lt;/h2&gt; &lt;p style=&quot;font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.2em; color: #4e5865;&quot;&gt; 나는 마블을 굉장히 좋아하고 그중에서도 아이언맨을 특히 좋아한다.&lt;br /&gt; 아이언맨에게 ‘자비스’가 있었던 것처럼 나도 나만의 ‘자비스’를 갖고...</content>
  </entry>
 
  
