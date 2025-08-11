@@ -7,11 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="generator" content="Jekyll">
 
-	<title>About Monochrome</title>
-  <meta name="description" content="This page describes monochrome.">
+	<title>about</title>
+  <meta name="description" content="정원사 툭히와 마음의 정원 소개">
 
 	<!-- CSS & fonts -->
-	<link rel="stylesheet" href="/monochrome/css/main.css">
+	<link rel="stylesheet" href="/myblog/css/main.css">
 
 	<!-- RSS -->
 	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
@@ -28,14 +28,16 @@
 	  	<!-- Navigation -->
 	  	<nav id="nav">
 	<div id="nav-list">
-		<a href="/monochrome/">Home</a>
+		<a href="/myblog/">Home</a>
 
 		<!-- Nav pages -->
 	  
 	    
 	  
 	    
-	      <a href="/monochrome/about" title="About Monochrome">About Monochrome</a>
+	      <a href="/myblog/about" title="about">about</a>
+	    
+	  
 	    
 	  
 	    
@@ -52,8 +54,7 @@
 	  
     
     <!-- Nav links -->
-	  <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a>
-<a href="https://github.com/thereviewindex/monochrome">Project on Github</a>
+	  
 
 
 	</div>
@@ -80,9 +81,9 @@
         <header id="header" class="parent justify-spaceBetween">
   <div class="inner w100 relative">
     <span class="f-left">  
-      <a href="/monochrome/">
+      <a href="/myblog/">
         <h1>
-          <span>mono</span>chrome
+          마음의 정원
         </h1>
       </a>
     </span>
@@ -92,7 +93,9 @@
 	      
 	    
 	      
-	        <a href="/monochrome/about" title="About Monochrome">About Monochrome</a>
+	        <a href="/myblog/about" title="about">about</a>
+	      
+	    
 	      
 	    
 	      
@@ -109,8 +112,7 @@
 	    
       
       <!-- Nav links -->
-	    <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">Download</a>
-<a href="https://github.com/thereviewindex/monochrome">Project on Github</a>
+	    
 
 
     </span>
@@ -129,32 +131,241 @@
 
 			<article id="page">
 	
-  <h2 id="about">About</h2>
-<p>Monochrome is a minimal, responsive theme created for Jekyll. The goal of Monochrome is to provide a ready to use, plug and play theme for those who want to set up a blog, and focus solely on the content.</p>
+  <style>
+/* CSS 변수 */
+:root {
+  --color-primary: #2e5e4e;
+  --color-primary-light: #49786c;
+  --color-background: #fdf6e4;
+  --color-secondary-bg: #f5f5dc;
+  --color-accent-orange: #e58a5b;
+  --color-text-primary: #2c3e50;
+  --color-text-secondary: #7f8c8d;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --border-radius-lg: 12px;
+  --transition: 0.3s ease;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
-<h2 id="features">Features</h2>
+/* 페이지 컨테이너 */
+#page {
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto;
+  padding: var(--spacing-2xl);
+  background: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
 
-<ul>
-  <li>Completely responsive and mobile first</li>
-  <li>Clean SEO friendly URLs, auto-generated from post title (no messy dates in the url)</li>
-  <li>SEO title/description integration</li>
-  <li>Sitemap ready</li>
-  <li>Easy customization for header, footer, navigation links, colors, favicon etc</li>
-  <li>Default Monochrome Color Palette - black, white, greys</li>
-</ul>
+/* 제목 스타일 */
+#page h1 {
+  text-align: center;
+  margin: var(--spacing-xl) auto;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
-<h3 id="setup">Setup</h3>
+/* 인용구 스타일 */
+.quote-box {
+  text-align: center;
+  font-style: italic;
+  margin: var(--spacing-xl) auto;
+  max-width: 600px;
+  color: var(--color-text-secondary);
+  font-size: 1.2rem;
+  border-left: 4px solid var(--color-accent-orange);
+  background: var(--color-secondary-bg);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+}
 
-<p>Monochrome may be installed by simply downloading the .zip folder from the <a href="https://github.com/thereviewindex/monochrome/archive/master.zip">repository on Github</a>.</p>
+/* 본문 텍스트 */
+#page > p {
+  text-align: center;
+  max-width: 800px;
+  margin: var(--spacing-lg) auto;
+  color: var(--color-text-primary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
 
-<p>After extracting the content from the folder into the selected directory, you can type <code class="highlighter-rouge">jekyll serve</code> from the terminal, than open your browser to <code class="highlighter-rouge">0.0.0.0:4000/monochrome/</code> and you will find it there.</p>
+/* About 페이지 전용 카드 스타일 */
+#page .card {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid #f0f0f0;
+}
 
-<p>Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the <code class="highlighter-rouge">baseurl</code> value into the <code class="highlighter-rouge">_config.yml</code> file, with the directory name of your project (for example /blog) or simply with a “/” (slash) if you want install Monochrome in the root.</p>
+#page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
 
-<p>For further details on Monochrome, please visit the <a href="https://github.com/thereviewindex/monochrome/">repository on Github</a>.</p>
+#page .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-primary);
+  text-align: center;
+}
 
-<p><img src="img/monochrome01.png" alt="Monochrome" title="monochrome" /></p>
+/* About 페이지 리스트 스타일 */
+#page .card-content ul {
+  list-style: none;
+  padding: 0;
+}
 
+#page .card-content li {
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-secondary-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-accent-orange);
+}
+
+#page .card-content li strong {
+  color: var(--color-primary);
+}
+
+#page .card-content li small {
+  color: var(--color-text-secondary);
+}
+
+/* 연락처 섹션 */
+.contact-section {
+  text-align: center;
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-lg);
+  background: var(--color-secondary-bg);
+  border-radius: var(--border-radius-lg);
+}
+
+/* 링크 스타일 */
+#page a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+#page a:hover {
+  color: var(--color-accent-orange);
+  text-decoration: underline;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  #page {
+    margin: var(--spacing-md);
+    padding: var(--spacing-lg);
+  }
+}
+</style>
+
+<h1 id="안녕하세요-정원사-툭히입니다">안녕하세요, 정원사 툭히입니다</h1>
+
+<div class="quote-box">
+"막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
+</div>
+
+<p>우울증과 공황장애를 겪던 시절, 조금은 늦은 나이에 대학에 들어갔습니다.
+비슷한 아픔을 가진 사람들을 돕고 싶어 상담심리학을 전공했지만,
+실제 그 과정은 생각과 달랐습니다.</p>
+
+<p>누군가에게 힘이 되고 싶어 시작한 공부가 
+그동안 외면했던 ‘나’를 마주하는 시간이었고, 그 과정이 얼마나 맵던지..</p>
+
+<p>하지만 ‘나를 이해함’은 마음의 돌덩이들을 하나둘 내려놓게 했고, 
+시간이 흐른 지금은 건강함 속에 살아가고 있습니다.</p>
+
+<p>다시 돌아가고 싶진 않습니다. 
+그러나 그 시간이 저에게 의미있었기에, 
+그 기억을 담아 ‘마음의 정원’을 가꾸고 있습니다.</p>
+
+<h2 class="section-title">쌓아온 경험과 배움</h2>
+
+<div class="grid grid-3">
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">이런 걸 배웠어요</h3>
+      <ul>
+        <li>
+          <strong>상담심리학부 청소년상담학 전공</strong><br />
+          <small>사회복지서비스 복수전공</small>
+        </li>
+        <li>
+          <strong>전직지원 전문가 입문과정</strong><br />
+          <small>한국기술교육대학교</small>
+        </li>
+        <li>
+          <strong>취업희망 프로그램 진행자 양성교육</strong><br />
+          <small>한국고용정보원</small>
+        </li>
+        <li>
+          <strong>청년층고용지원과정</strong><br />
+          <small>한국기술교육대학교</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">이런 자격을 갖췄어요</h3>
+      <ul>
+        <li>
+          <strong>사회복지사 1급</strong><br />
+          <small>보건복지부</small>
+        </li>
+        <li>
+          <strong>직업상담사 2급</strong><br />
+          <small>고용노동부</small>
+        </li>
+        <li>
+          <strong>청소년지도사 3급</strong><br />
+          <small>여성가족부</small>
+        </li>        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-content">
+      <h3 class="card-title">이런 일들을 해왔어요</h3>
+      <ul>
+        <li>
+          <strong>구직단념 청년 지원사업 기획 및 운영</strong><br />
+          <small>청년도전 지원사업 실무 담당</small><br />
+          <small>사업 기획 및 운영, 프로그램 설계 및 관리, 기관 네트워킹, 참여자 상담 및 사례관리</small>
+        </li>
+        <li>
+          <strong>지자체 교육사업 기획 및 운영</strong><br />
+          <small>사업계획 수립 및 성과관리</small><br />
+          <small>프로그램 운영, 기업 파트너십 구축, 잡 매칭데이 기획 및 운영</small>
+        </li>
+        <li>
+          <strong>고용노동부 취업지원제도</strong><br />
+          <small>국민취업지원제도 전담상담사</small><br />
+          <small>개인별 맞춤형 진로상담 및 취업 연계 지원</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section">
+<strong>E-mail</strong>: <a href="mailto:gardener.tookhee@gmail.com">gardener.tookhee@gmail.com</a>
+</div>
 
 
 </article>
@@ -171,7 +382,7 @@
 
 
 	    <!-- Script -->
-      <script src="/monochrome/js/main.js"></script>	
+      <script src="/myblog/js/main.js"></script>	
 
 
 	</div>

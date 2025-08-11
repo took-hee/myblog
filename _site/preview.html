@@ -1,11 +1,20 @@
----
-layout: page
-title: about
-description: 정원사 툭히와 마음의 정원 소개
----
-
-<style>
-/* CSS 변수 */
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About 페이지 미리보기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* 여기에 about.md의 <style> 태그 내용을 복사해주세요 */
+/* CSS 변수 가져오기 */
 :root {
   --color-primary: #2e5e4e;
   --color-primary-light: #49786c;
@@ -24,6 +33,15 @@ description: 정원사 툭히와 마음의 정원 소개
   --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* 전체 배경을 기존 CSS와 통일 */
+body {
+  background-color: var(--color-background) !important;
+}
+
+#wrap, #container, main {
+  background: transparent !important;
+}
+
 /* 페이지 컨테이너 */
 #page {
   max-width: 1200px;
@@ -32,6 +50,7 @@ description: 정원사 툭히와 마음의 정원 소개
   background: white;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
 }
 
 /* 제목 스타일 */
@@ -43,7 +62,7 @@ description: 정원사 툭히와 마음의 정원 소개
   font-weight: 700;
 }
 
-/* 인용구 스타일 */
+/* 인용구를 HTML로 직접 만들기 */
 .quote-box {
   text-align: center;
   font-style: italic;
@@ -67,8 +86,19 @@ description: 정원사 툭히와 마음의 정원 소개
   font-size: 1.1rem;
 }
 
-/* About 페이지 전용 카드 스타일 */
-#page .card {
+/* 그리드 시스템 */
+.grid {
+  display: grid;
+  gap: var(--spacing-xl);
+  margin: var(--spacing-2xl) 0;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* 카드 스타일 - 기존 CSS와 통일 */
+.card {
   background-color: white;
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
@@ -77,12 +107,12 @@ description: 정원사 툭히와 마음의 정원 소개
   border: 1px solid #f0f0f0;
 }
 
-#page .card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
-#page .card-title {
+.card-title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: var(--spacing-lg);
@@ -90,13 +120,22 @@ description: 정원사 툭히와 마음의 정원 소개
   text-align: center;
 }
 
-/* About 페이지 리스트 스타일 */
-#page .card-content ul {
+/* 섹션 제목 */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* 리스트 스타일 */
+.card-content ul {
   list-style: none;
   padding: 0;
 }
 
-#page .card-content li {
+.card-content li {
   margin-bottom: var(--spacing-md);
   padding: var(--spacing-md);
   background: var(--color-secondary-bg);
@@ -104,11 +143,11 @@ description: 정원사 툭히와 마음의 정원 소개
   border-left: 3px solid var(--color-accent-orange);
 }
 
-#page .card-content li strong {
+.card-content li strong {
   color: var(--color-primary);
 }
 
-#page .card-content li small {
+.card-content li small {
   color: var(--color-text-secondary);
 }
 
@@ -124,27 +163,45 @@ description: 정원사 툭히와 마음의 정원 소개
 }
 
 /* 링크 스타일 */
-#page a {
+a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
 }
 
-#page a:hover {
+a:hover {
   color: var(--color-accent-orange);
   text-decoration: underline;
 }
 
+/* 폰트 강제 적용 */
+#page * {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
   #page {
     margin: var(--spacing-md);
     padding: var(--spacing-lg);
   }
-}
-</style>
+}        
 
+            
+            
+
+
+    </style>
+</head>
+<body>
+    <article id="page">
+        <!-- 여기에 about.md의 HTML 내용을 복사해주세요 -->
+        
 # 안녕하세요, 정원사 툭히입니다
 
 <div class="quote-box">
@@ -239,3 +296,6 @@ description: 정원사 툭히와 마음의 정원 소개
 <div class="contact-section">
 <strong>E-mail</strong>: <a href="mailto:gardener.tookhee@gmail.com">gardener.tookhee@gmail.com</a>
 </div>
+    </article>
+</body>
+</html>

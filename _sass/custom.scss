@@ -2,6 +2,65 @@
 
 // -- Put custom style under this point -- //
 
+/* 최고 우선순위로 배경색 강제 적용 */
+html {
+  background-color: #fdf6e4 !important;
+  background: #fdf6e4 !important;
+}
+
+body {
+  background-color: #fdf6e4 !important;
+  background: #fdf6e4 !important;
+}
+
+/* 모든 요소에 강제 적용 */
+html, body, #wrap, #container, main, div {
+  background-color: #fdf6e4 !important;
+}
+
+/* 페이지 전체 최상위 우선순위 */
+* {
+  background-color: inherit !important;
+}
+
+html * {
+  background-color: #fdf6e4 !important;
+}
+
+/* 웹폰트 로드 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+/* 전체 사이트 폰트 및 배경색 적용 */
+html, body, * {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
+html, body, #wrap, #container, main {
+  background-color: #fdf6e4 !important;
+  min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+#header {
+  background-color: rgba(253, 246, 228, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+#header h1 {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-weight: 700 !important;
+  color: #2e5e4e !important;
+}
+
+#header a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+#header a:hover {
+  color: #e58a5b !important;
+}
+
 /* 3단 그리드 레이아웃 */
 .grid {
   display: grid;
@@ -13,24 +72,27 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/* 카드 기본 스타일 */
 .card {
-  background: #f8f9fa;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid #e9ecef;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: #2e5e4e;
+  text-align: center;
 }
 
 .card-content ul {
@@ -44,12 +106,16 @@
   border-bottom: 1px solid #dee2e6;
 }
 
+/* 섹션 제목 */
 .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 3rem;
+  color: #2e5e4e;
+  font-weight: 700;
 }
 
+/* 반응형 */
 @media (max-width: 768px) {
   .grid-3 {
     grid-template-columns: 1fr;
