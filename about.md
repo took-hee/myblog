@@ -1,8 +1,11 @@
 ---
 layout: page
-title: About
+title: 정원사 소개
 description: 정원사 툭히와 마음의 정원 소개
 ---
+
+<!-- 웹폰트 로드 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 .grid {
@@ -218,6 +221,22 @@ a {
 a:hover {
   color: #97c93d;
   text-decoration: underline;
+}
+
+/* 페이지 전체 폰트 적용 */
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important;
+}
+
+/* 모든 텍스트에 폰트 강제 적용 */
+#page * {
+  font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important;
 }
 </style>
 
