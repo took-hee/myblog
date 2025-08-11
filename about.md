@@ -72,33 +72,67 @@ description: 정원사 툭히와 마음의 정원 소개
 <div class="grid grid-3">
   <div class="card">
     <div class="card-content">
-      <h3 class="card-title">💡 이런 걸 배웠어요</h3>
+      <h3 class="card-title">이런 걸 배웠어요</h3>
       <ul>
-        <li><strong>상담심리학부 청소년상담학 전공</strong><br><small>사회복지학 복수전공</small></li>
-        <li><strong>전직지원 전문가 입문과정</strong><br><small>한국기술교육대학교</small></li>
-        <li><strong>취업희망 프로그램 진행자 양성교육</strong><br><small>한국고용정보원</small></li>
-        <li><strong>청년층고용지원과정</strong><br><small>한국기술교육대학교</small></li>
+        <li>
+          <strong>상담심리학부 청소년상담학 전공</strong><br>
+          <small>사회복지서비스 복수전공</small>
+        </li>
+        <li>
+          <strong>전직지원 전문가 입문과정</strong><br>
+          <small>한국기술교육대학교</small>
+        </li>
+        <li>
+          <strong>취업희망 프로그램 진행자 양성교육</strong><br>
+          <small>한국고용정보원</small>
+        </li>
+        <li>
+          <strong>청년층고용지원과정</strong><br>
+          <small>한국기술교육대학교</small>
+        </li>
       </ul>
     </div>
   </div>
 
   <div class="card">
     <div class="card-content">
-      <h3 class="card-title">📜 이런 자격을 갖췄어요</h3>
+      <h3 class="card-title">이런 자격을 갖췄어요</h3>
       <ul>
-        <li><strong>사회복지사 1급</strong><br><small>보건복지부</small></li>
-        <li><strong>직업상담사 2급</strong><br><small>고용노동부</small></li>
+        <li>
+          <strong>사회복지사 1급</strong><br>
+          <small>보건복지부</small>
+        </li>
+        <li>
+          <strong>직업상담사 2급</strong><br>
+          <small>고용노동부</small>
+        </li>
+        <li>
+          <strong>청소년지도사 3급</strong><br>
+          <small>여성가족부</small>
+        </li>        
       </ul>
     </div>
   </div>
   
   <div class="card">
     <div class="card-content">
-      <h3 class="card-title">💼 이런 일들을 해왔어요</h3>
+      <h3 class="card-title">이런 일들을 해왔어요</h3>
       <ul>
-        <li><strong>구직단념 청년 지원사업 기획 및 운영</strong><br><small>청년도전 지원사업 실무 담당</small></li>
-        <li><strong>지자체 교육사업 기획 및 운영</strong><br><small>사업계획 수립 및 성과관리</small></li>
-        <li><strong>고용노동부 취업지원제도</strong><br><small>국민취업지원제도 전담상담사</small></li>
+        <li>
+          <strong>구직단념 청년 지원사업 기획 및 운영</strong><br>
+          <small>청년도전 지원사업 실무 담당</small><br>
+          <small>사업 기획 및 운영, 프로그램 설계 및 관리, 기관 네트워킹, 참여자 상담 및 사례관리</small>
+        </li>
+        <li>
+          <strong>지자체 교육사업 기획 및 운영</strong><br>
+          <small>사업계획 수립 및 성과관리</small><br>
+          <small>프로그램 운영, 기업 파트너십 구축, 잡 매칭데이 기획 및 운영</small>
+        </li>
+        <li>
+          <strong>고용노동부 취업지원제도</strong><br>
+          <small>국민취업지원제도 전담상담사</small><br>
+          <small>개인별 맞춤형 진로상담 및 취업 연계 지원</small>
+        </li>
       </ul>
     </div>
   </div>
