@@ -24,51 +24,28 @@ description: 정원사 툭히와 마음의 정원 소개
   --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* 페이지 컨테이너 */
-#page {
-  max-width: 1200px;
-  margin: var(--spacing-xl) auto;
-  padding: var(--spacing-2xl);
-  background: white;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-}
-
-/* 제목 스타일 */
-#page h1 {
-  text-align: center;
-  margin: var(--spacing-xl) auto;
-  color: var(--color-primary);
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
 /* 인용구 스타일 */
 .quote-box {
   text-align: center;
-  font-style: italic;
+  font-style: bold;
   margin: var(--spacing-xl) auto;
-  max-width: 600px;
-  color: var(--color-text-secondary);
-  font-size: 1.2rem;
-  border-left: 4px solid var(--color-accent-orange);
-  background: var(--color-secondary-bg);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-lg);
+  max-width: 1000px;
+  color: #e58a5b;
+  font-size: 1.1rem;
 }
 
 /* 본문 텍스트 */
-#page > p {
+p {
   text-align: center;
   max-width: 800px;
   margin: var(--spacing-lg) auto;
   color: var(--color-text-primary);
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* About 페이지 전용 카드 스타일 */
-#page .card {
+.card {
   background-color: white;
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
@@ -77,12 +54,12 @@ description: 정원사 툭히와 마음의 정원 소개
   border: 1px solid #f0f0f0;
 }
 
-#page .card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
-#page .card-title {
+.card-title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: var(--spacing-lg);
@@ -91,12 +68,12 @@ description: 정원사 툭히와 마음의 정원 소개
 }
 
 /* About 페이지 리스트 스타일 */
-#page .card-content ul {
+.card-content ul {
   list-style: none;
   padding: 0;
 }
 
-#page .card-content li {
+.card-content li {
   margin-bottom: var(--spacing-md);
   padding: var(--spacing-md);
   background: var(--color-secondary-bg);
@@ -104,11 +81,11 @@ description: 정원사 툭히와 마음의 정원 소개
   border-left: 3px solid var(--color-accent-orange);
 }
 
-#page .card-content li strong {
+.card-content li strong {
   color: var(--color-primary);
 }
 
-#page .card-content li small {
+.card-content li small {
   color: var(--color-text-secondary);
 }
 
@@ -124,46 +101,40 @@ description: 정원사 툭히와 마음의 정원 소개
 }
 
 /* 링크 스타일 */
-#page a {
+a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
 }
 
-#page a:hover {
+a:hover {
   color: var(--color-accent-orange);
   text-decoration: underline;
 }
-
-/* 반응형 */
-@media (max-width: 768px) {
-  #page {
-    margin: var(--spacing-md);
-    padding: var(--spacing-lg);
-  }
-}
 </style>
-
-# 안녕하세요, 정원사 툭히입니다
+<h2 class="section-title">안녕하세요, 정원사 툭히입니다</h2>
 
 <div class="quote-box">
-"막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
+막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다.
 </div>
 
-우울증과 공황장애를 겪던 시절, 조금은 늦은 나이에 대학에 들어갔습니다.
-비슷한 아픔을 가진 사람들을 돕고 싶어 상담심리학을 전공했지만,
-실제 그 과정은 생각과 달랐습니다.
 
-누군가에게 힘이 되고 싶어 시작한 공부가 
-그동안 외면했던 '나'를 마주하는 시간이었고, 그 과정이 얼마나 맵던지..
+우울증과 공황장애를 겪던 시절,
+조금은 늦은 나이에 대학에 들어갔습니다.<br>
+비슷한 아픔을 가진 사람들을 돕고 싶어 상담심리학을 전공했지만,<br>
+실제 그 과정은 생각과 달랐습니다.<br><br>
 
-하지만 '나를 이해함'은 마음의 돌덩이들을 하나둘 내려놓게 했고, 
-시간이 흐른 지금은 건강함 속에 살아가고 있습니다.
+누군가에게 힘이 되고 싶어 시작한 공부가<br> 
+그동안 외면했던 '나'를 마주하는 시간이었고, 그 과정이 얼마나 맵던지..<br><br>
 
-다시 돌아가고 싶진 않습니다. 
-그러나 그 시간이 저에게 의미있었기에, 
-그 기억을 담아 '마음의 정원'을 가꾸고 있습니다.
+하지만 '나를 이해함'은 마음의 돌덩이들을 하나둘 내려놓게 했고, <br>
+시간이 흐른 지금은 건강함 속에 살아가고 있습니다.<br><br>
+
+다시 돌아가고 싶진 않습니다.<br>
+그러나 그 시간이 저에게 의미있었기에, 그 기억을 담아 '마음의 정원'을 가꾸고 있습니다.
+
+
 
 <h2 class="section-title">쌓아온 경험과 배움</h2>
 

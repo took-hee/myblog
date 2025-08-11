@@ -720,31 +720,6 @@ footer {
   color: #009999;
 } /* Literal.Number.Integer.Long */
 /*- Custom style -*/
-/* 최고 우선순위로 배경색 강제 적용 */
-html {
-  background-color: #fdf6e4 !important;
-  background: #fdf6e4 !important;
-}
-
-body {
-  background-color: #fdf6e4 !important;
-  background: #fdf6e4 !important;
-}
-
-/* 모든 요소에 강제 적용 */
-html, body, #wrap, #container, main, div {
-  background-color: #fdf6e4 !important;
-}
-
-/* 페이지 전체 최상위 우선순위 */
-* {
-  background-color: inherit !important;
-}
-
-html * {
-  background-color: #fdf6e4 !important;
-}
-
 /* 웹폰트 로드 */
 /* 전체 사이트 폰트 및 배경색 적용 */
 html, body, * {
