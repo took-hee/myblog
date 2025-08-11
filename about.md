@@ -57,6 +57,17 @@ description: 정원사 툭히와 마음의 정원 소개
   padding: 0 2rem;
 }
 
+/* 제목 센터 정렬 */
+#page h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* 모든 헤딩 태그 센터 정렬 */
+#page h1, #page h2, #page h3 {
+  text-align: center;
+}
+
 /* 텍스트 컨테이너 센터 정렬 */
 .text-center {
   text-align: center;
@@ -88,7 +99,7 @@ hr {
 
 # 안녕하세요, 정원사 툭히입니다
 
-> "막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
+## "막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
 
 우울증과 공황장애를 겪던 시절, 조금은 늦은 나이에 대학에 들어갔습니다.
 
