@@ -49,6 +49,41 @@ description: 정원사 툭히와 마음의 정원 소개
     grid-template-columns: 1fr;
   }
 }
+
+/* 페이지 전체 센터 정렬 */
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 텍스트 컨테이너 센터 정렬 */
+.text-center {
+  text-align: center;
+}
+
+/* 인용구 스타일 개선 */
+blockquote {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+/* 본문 텍스트 중앙 정렬 */
+#page > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+/* 수평선 스타일 */
+hr {
+  max-width: 400px;
+  margin: 3rem auto;
+  border: none;
+  border-top: 2px solid #e9ecef;
+}
 </style>
 
 # 안녕하세요, 정원사 툭히입니다
@@ -140,4 +175,8 @@ description: 정원사 툭히와 마음의 정원 소개
 
 ---
 
-**연락처**: [gardener.tookhee@gmail.com](mailto:gardener.tookhee@gmail.com)
+---
+
+<div class="text-center">
+<strong>E-mail</strong>: <a href="mailto:gardener.tookhee@gmail.com">gardener.tookhee@gmail.com</a>
+</div>
