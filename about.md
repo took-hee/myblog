@@ -5,7 +5,7 @@ description: 정원사 툭히와 마음의 정원 소개
 ---
 
 <!-- 웹폰트 로드 -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
 <style>
 .grid {
