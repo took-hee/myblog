@@ -90,6 +90,34 @@ html, body, #wrap, #container, main {
   font-weight: 700;
 }
 
+/* 푸터 배경색 통일 */
+footer {
+  background-color: #fdf6e4 !important;
+  color: #2e5e4e;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(46, 94, 78, 0.1);
+}
+
+/* 푸터 링크 스타일 */
+footer a {
+  color: #2e5e4e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #e58a5b;
+  text-decoration: underline;
+}
+
+/* 푸터 텍스트 스타일 */
+footer span {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .grid-3 {
