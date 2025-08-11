@@ -132,6 +132,23 @@ footer span {
   border: 0;
 }
 
+/* 포스트 리스트 제목 색상 */
+#posts li h2 a {
+  color: #2e5e4e !important;
+  text-decoration: none;
+}
+
+#posts li h2 a:hover {
+  color: #e58a5b !important;
+  text-decoration: none;
+}
+
+/* 포스트 제목 전체 스타일 */
+#posts li h2 {
+  color: #2e5e4e !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .grid-3 {
