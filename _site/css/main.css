@@ -914,6 +914,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3 !important;
 }
 
+/* 기본 구분선 스타일 */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ccd1d9;
+  margin: 0.8em auto;
+  width: 50%;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .grid-3 {
