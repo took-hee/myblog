@@ -21,10 +21,12 @@ html, body, #wrap, #container, main {
   backdrop-filter: blur(10px);
 }
 
-#header h1 {
+#header .site-title {
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
   font-weight: 700 !important;
   color: #2e5e4e !important;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 #header a {
