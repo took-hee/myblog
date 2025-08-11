@@ -104,7 +104,7 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #f5f7fa 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -241,7 +241,7 @@ a:hover {
 </style>
 
 # 안녕하세요, 정원사 툭히입니다
-<h2 class="section-title">"막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."</h2>
+>"막연한 '나'를 이해하고 싶은 분들을 위해 만들어진 공간입니다."
 
 우울증과 공황장애를 겪던 시절, 조금은 늦은 나이에 대학에 들어갔습니다.
 비슷한 아픔을 가진 사람들을 돕고 싶어 상담심리학을 전공했지만,
