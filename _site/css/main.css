@@ -914,6 +914,94 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3 !important;
 }
 
+strong {
+  color: #e58a5b !important;
+}
+
+.post-image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1.5em auto;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* 기본 마크다운 인용문 - 오렌지 강조 스타일 */
+blockquote {
+  border-left: 4px solid #e58a5b !important;
+  padding: 0 1.5 0 1.5em !important;
+  margin: 0.8em 0 !important;
+  background: transparent !important;
+  font-style: italic !important;
+  color: #4e5865 !important;
+  border-radius: 0 !important;
+  font-family: "Gowun Dodum", "Malgun Gothic", sans-serif !important;
+}
+
+blockquote p {
+  margin: 0 !important;
+  line-height: 1.7 !important;
+  color: #4e5865 !important;
+  font-style: italic !important;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* 여러 문단이 있는 인용문 처리 */
+blockquote p + p {
+  margin-top: 0.6em !important;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 3em;
+  color: #e58a5b;
+  position: absolute;
+  left: -0.1em;
+  top: -0.3em;
+  font-family: serif;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+/* 스타일 1: 오렌지 강조 인용문 (Orange Accent Quote) - 삭제됨 */
+/* 스타일 2: 그린 정보박스 (Green Info Box) - 핵심 정보용 */
+.info-box {
+  background-color: rgba(46, 94, 78, 0.08) !important;
+  padding: 1.5em !important;
+  border-radius: 8px !important;
+  margin: 1.2em 0 !important;
+  border: none !important;
+  font-style: normal !important;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(46, 94, 78, 0.05) !important;
+}
+
+.info-box p {
+  margin: 0 !important;
+  line-height: 1.6 !important;
+  color: #2e5e4e !important;
+  font-family: "Gowun Dodum", "Malgun Gothic", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.info-box p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.info-box p + p {
+  margin-top: 0.8em !important;
+}
+
 /* 기본 구분선 스타일 */
 .footer-divider {
   border: none;
@@ -926,6 +1014,15 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+  /* 모바일에서 인용문 패딩 조정 */
+  blockquote {
+    padding: 0 1 0 1em !important;
+    margin: 0.6em 0 !important;
+  }
+  .info-box {
+    padding: 1em !important;
+    margin: 1em 0 !important;
   }
 }
 
