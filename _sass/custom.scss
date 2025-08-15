@@ -220,6 +220,32 @@ strong {
   margin-top: 0.5em;
 }
 
+/* 마크다운 인용문 스타일 (blockquote) */
+blockquote {
+  border-left: 4px solid #2e5e4e !important;
+  padding: 1em !important;
+  margin: 1.5em 0 !important;
+  background-color: rgba(46, 94, 78, 0.03) !important;
+  border-radius: 4px !important;
+  font-style: normal !important;
+}
+
+blockquote p {
+  margin: 0 !important;
+  line-height: 1.6 !important;
+  color: #4e5865 !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* 여러 문단이 있는 인용문 처리 */
+blockquote p + p {
+  margin-top: 0.8em !important;
+}
+
 /* 기본 구분선 스타일 */
 .footer-divider {
   border: none;
@@ -232,5 +258,11 @@ strong {
 @media (max-width: 768px) {
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+  
+  /* 모바일에서 인용문 패딩 조정 */
+  blockquote {
+    padding: 0.8em !important;
+    margin: 1em 0 !important;
   }
 }
