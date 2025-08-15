@@ -223,17 +223,13 @@ strong {
 /* 기본 마크다운 인용문 - 오렌지 강조 스타일 */
 blockquote {
   border-left: 4px solid #e58a5b !important;
-  padding-left: 1.5em !important;
-  padding-right: 1em !important;
-  padding-top: 1em !important;
-  padding-bottom: 1em !important;
-  margin: 1.2em 0 !important;
+  padding: 0.8em 1em 0.5em 1.5em !important;
+  margin: 0.8em 0 !important;
   background: transparent !important;
   font-style: italic !important;
   color: #4e5865 !important;
   border-radius: 0 !important;
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
-  position: relative;
 }
 
 blockquote p {
@@ -249,11 +245,11 @@ blockquote p:last-child {
 
 /* 여러 문단이 있는 인용문 처리 */
 blockquote p + p {
-  margin-top: 0.8em !important;
+  margin-top: 0.6em !important;
 }
 
 blockquote::before {
-  content: none;
+  content: '"';
   font-size: 3em;
   color: #e58a5b;
   position: absolute;
@@ -310,8 +306,8 @@ blockquote::before {
   
   /* 모바일에서 인용문 패딩 조정 */
   blockquote {
-    padding: 0.8em 0.8em 0.8em 1.2em !important;
-    margin: 1em 0 !important;
+    padding: 0.6em 0.8em 0.4em 1.2em !important;
+    margin: 0.6em 0 !important;
   }
   
   .info-box {
