@@ -10,6 +10,12 @@ author:
 # Build settings
 baseurl: ""
 markdown: kramdown
+kramdown:
+  hard_wrap: true           # 단순 줄바꿈 인식
+  parse_block_html: true    # HTML 블록 파싱
+  parse_span_html: true     # HTML 인라인 파싱
+  input: GFM               # GitHub Flavored Markdown
+  syntax_highlighter: rouge
 source: .
 destination: ./_site
 permalink: /:title
@@ -40,3 +46,4 @@ reverse: false
 
 # google analytics
 google_analytics: G-GYJHKW4Q3L
+
