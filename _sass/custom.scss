@@ -223,7 +223,7 @@ strong {
 /* 기본 마크다운 인용문 - 오렌지 강조 스타일 */
 blockquote {
   border-left: 4px solid #e58a5b !important;
-  padding: 0.8em 1em 0.5em 1.5em !important;
+  padding: 0 0 0 1.5em !important;
   margin: 0.8em 0 !important;
   background: transparent !important;
   font-style: italic !important;
@@ -306,7 +306,7 @@ blockquote::before {
   
   /* 모바일에서 인용문 패딩 조정 */
   blockquote {
-    padding: 0.6em 0.8em 0.4em 1.2em !important;
+    padding: 0 0 0 1.2em !important;
     margin: 0.6em 0 !important;
   }
   
