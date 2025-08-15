@@ -253,7 +253,7 @@ blockquote p + p {
 }
 
 blockquote::before {
-  content: '"';
+  content: none;
   font-size: 3em;
   color: #e58a5b;
   position: absolute;
