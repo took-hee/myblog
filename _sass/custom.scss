@@ -224,10 +224,9 @@ strong {
 blockquote {
   border-left: 4px solid #2e5e4e !important;
   padding: 1em !important;
-  margin: 1.5em 0 !important;
-  background-color: rgba(46, 94, 78, 0.03) !important;
+  margin: 1em 0 !important;
   border-radius: 4px !important;
-  font-style: normal !important;
+  font-style: bold !important;
 }
 
 blockquote p {
@@ -263,6 +262,6 @@ blockquote p + p {
   /* 모바일에서 인용문 패딩 조정 */
   blockquote {
     padding: 0.8em !important;
-    margin: 1em 0 !important;
+    margin: 0.8em 0 !important;
   }
 }
