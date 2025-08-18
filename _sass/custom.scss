@@ -33,22 +33,55 @@ html, body, #wrap, #container, main {
 }
 
 #header .inner {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-/* 본문 영역 상단 여백 추가 (헤더 높이만큼) */
-body {
-  padding-top: 100px !important; /* 헤더 높이에 맞춰 증가 */
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 15% !important; /* 기본 (큰 화면) */
 }
 
 #header .site-title {
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
   font-weight: 700 !important;
   color: #2e5e4e !important;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0;
+}
+
+/* 이전 버전 스타일을 참고한 체계적인 반응형 */
+@media (max-width: 1400px) {
+  #header .inner {
+    padding-left: 12% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header .inner {
+    padding-left: 8% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header .inner {
+    padding-left: 6% !important;
+  }
+  
+  #header .site-title {
+    font-size: 1.5rem; /* 태블릿에서 폰트 크기 조정 */
+  }
+}
+
+@media (max-width: 768px) {
+  #header .inner {
+    padding-left: 1rem !important; /* 모바일에서는 고정값 */
+  }
+  
+  #header .site-title {
+    font-size: 1.4rem; /* 모바일 폰트 크기 */
+  }
+}
+
+/* 본문 영역 상단 여백 추가 (헤더 높이만큼) */
+body {
+  padding-top: 100px !important; /* 헤더 높이에 맞춰 증가 */
 }
 
 #header a {
