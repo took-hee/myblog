@@ -188,21 +188,21 @@ footer span {
 
 /* 헤딩 태그 크기 설정 */
 h1 {
-  font-size: 2rem !important;        /* 40px */
+  font-size: 1.7rem !important;        /* 40px */
   font-weight: 700 !important;
   color: #2e5e4e !important;
   margin-bottom: 1.5rem !important;
 }
 
 h2 {
-  font-size: 1.7rem !important;          /* 32px */
+  font-size: 1.5rem !important;          /* 32px */
   font-weight: 600 !important;
   color: #2e5e4e !important;
   margin-bottom: 1.2rem !important;
 }
 
 h3 {
-  font-size: 1.4rem !important;        /* 24px */
+  font-size: 1.3rem !important;        /* 24px */
   font-weight: 600 !important;
   color: #2e5e4e !important;
   margin-bottom: 1rem !important;
@@ -257,6 +257,11 @@ h1, h2, h3, h4, h5, h6 {
   #posts li p {
     font-size: 0.85rem !important;
   }
+}
+
+#post-page h1 {
+  text-align: center !important;
+  margin-bottom: 2rem !important;
 }
 
 // Strong 태그 색상 설정

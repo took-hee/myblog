@@ -2,12 +2,11 @@
 layout: default
 ---
 <article id="post-page">			
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: "%Y.%m.%d" }}</time>
-	<h1>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+		<h1>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
 	<div class="content">
 
 		{{ content }}
-		
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: "%Y.%m.%d" }}</time>	
 	</div>
 </article>
 
