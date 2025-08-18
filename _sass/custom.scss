@@ -49,6 +49,13 @@ body {
   color: #2e5e4e !important;
   font-size: 1.5rem;
   margin: 0;
+  margin-left: 5% !important; /* 화면 크기에 비례해서 이동 */
+}
+
+@media (max-width: 768px) {
+  #header .site-title {
+    margin-left: 1rem !important; /* 모바일에서는 작게 */
+  }
 }
 
 #header a {
