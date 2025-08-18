@@ -35,7 +35,7 @@ html, body, #wrap, #container, main {
 #header .inner {
   display: flex !important;
   align-items: center !important;
-  padding-left: 15% !important; /* 기본 (큰 화면) */
+  justify-content: center !important; /* 중앙 정렬 */
 }
 
 #header .site-title {
@@ -46,36 +46,10 @@ html, body, #wrap, #container, main {
   margin: 0;
 }
 
-/* 이전 버전 스타일을 참고한 체계적인 반응형 */
-@media (max-width: 1400px) {
-  #header .inner {
-    padding-left: 12% !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  #header .inner {
-    padding-left: 8% !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  #header .inner {
-    padding-left: 6% !important;
-  }
-  
-  #header .site-title {
-    font-size: 1.5rem; /* 태블릿에서 폰트 크기 조정 */
-  }
-}
-
+/* 모바일에서만 폰트 크기 조정 */
 @media (max-width: 768px) {
-  #header .inner {
-    padding-left: 1rem !important; /* 모바일에서는 고정값 */
-  }
-  
   #header .site-title {
-    font-size: 1.4rem; /* 모바일 폰트 크기 */
+    font-size: 1.4rem;
   }
 }
 
