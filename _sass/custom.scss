@@ -398,3 +398,16 @@ blockquote::before {
   }
 }
 
+/* 포스트 하단 날짜 오른쪽 정렬 */
+#post-page .by-line {
+  text-align: right !important;
+  display: block !important;
+  margin-top: 2rem !important;
+  color: #7f8c8d !important; /* 연한 회색으로 */
+  font-size: 0.9rem !important;
+}
+
+/* 포스트 내용과 날짜 사이 여백 */
+#post-page .content {
+  margin-bottom: 1rem !important;
+}
