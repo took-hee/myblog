@@ -395,3 +395,90 @@ a {
 a:hover {
   color: #e58a5b !important;
 }
+
+/* 태그 페이지 스타일 */
+.tags-container {
+  margin-bottom: 3rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.tag-item {
+  background-color: #2e5e4e;
+  color: #fdf6e4;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tag-item:hover {
+  background-color: #e58a5b;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.tag-section {
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.tag-section.active {
+  display: block;
+}
+
+.tag-title {
+  color: #2e5e4e;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e58a5b;
+  padding-bottom: 0.5rem;
+}
+
+.tag-posts {
+  list-style: none;
+  padding: 0;
+}
+
+.tag-post-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border-left: 4px solid #2e5e4e;
+}
+
+.tag-post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tag-post-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.tag-post-tags {
+  margin-top: 0.5rem;
+}
+
+.post-tag {
+  background-color: #e58a5b;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
