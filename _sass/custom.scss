@@ -2,7 +2,9 @@
 
 // -- Put custom style under this point -- //
 
-/* 웹폰트 로드 */
+/* ========================================
+   웹폰트 및 기본 설정
+======================================== */
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 /* 전체 사이트 폰트 및 배경색 적용 */
@@ -15,7 +17,13 @@ html, body, #wrap, #container, main {
   min-height: 100vh;
 }
 
-/* 헤더 스타일 */
+body {
+  padding-top: 100px !important; /* 헤더 높이에 맞춰 증가 */
+}
+
+/* ========================================
+   헤더 스타일
+======================================== */
 #header {
   background-color: rgba(253, 246, 228, 0.95) !important;
   backdrop-filter: blur(10px);
@@ -28,14 +36,12 @@ html, body, #wrap, #container, main {
   padding: 1rem 2rem !important;
   box-sizing: border-box !important;
   z-index: 1000 !important;
-  backdrop-filter: blur(10px) !important;
-  background-color: rgba(253, 246, 228, 0.95) !important;
 }
 
 #header .inner {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important; /* 중앙 정렬 */
+  justify-content: center !important;
 }
 
 #header .site-title {
@@ -44,18 +50,6 @@ html, body, #wrap, #container, main {
   color: #2e5e4e !important;
   font-size: 1.6rem;
   margin: 0;
-}
-
-/* 모바일에서만 폰트 크기 조정 */
-@media (max-width: 768px) {
-  #header .site-title {
-    font-size: 1.4rem;
-  }
-}
-
-/* 본문 영역 상단 여백 추가 (헤더 높이만큼) */
-body {
-  padding-top: 100px !important; /* 헤더 높이에 맞춰 증가 */
 }
 
 #header a {
@@ -67,7 +61,356 @@ body {
   color: #e58a5b !important;
 }
 
-/* 3단 그리드 레이아웃 */
+/* ========================================
+   푸터 스타일
+======================================== */
+footer {
+  background-color: #2e5e4e !important;
+  color: #fdf6e4;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(46, 94, 78, 0.1);
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 1.5rem 2rem !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+footer a {
+  color: #2e5e4e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #e58a5b;
+  text-decoration: underline;
+}
+
+footer span {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ========================================
+   포스트 목록 스타일
+======================================== */
+#posts li h2 {
+  color: #2e5e4e !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-size: 1.4rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+#posts li h2 a {
+  color: #2e5e4e !important;
+  text-decoration: none;
+}
+
+#posts li h2 a:hover {
+  color: #e58a5b !important;
+  text-decoration: none;
+}
+
+#posts li p {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* ========================================
+   포스트 상세 페이지 스타일
+======================================== */
+/* custom.scss에 추가 */
+#container #post-page h2,
+body #post-page h2 {
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+#post-page h1 {
+  text-align: center !important;
+  color: #e58a5b !important;
+  margin-bottom: 0 !important;
+}
+
+/* 포스트 페이지 h2 마진 조정 */
+#post-page h2 {
+  margin-bottom: 0.3rem !important; /* 더 작게 */
+  padding-top: 0.2em !important;
+}
+
+/* 첫 번째 h2의 상단 마진 제거 */
+#post-page h2:first-of-type {
+  margin-top: 0 !important;
+}
+
+#post-page .content {
+  line-height: 1.7 !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 1rem !important;
+}
+
+#post-page .content p {
+  margin-bottom: 1.5rem !important;
+}
+
+#post-page .content h2,
+#post-page .content h3,
+#post-page .content h4 {
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+#post-page .by-line {
+  text-align: right !important;
+  display: block !important;
+  margin-top: 2rem !important;
+  color: #7f8c8d !important;
+  font-size: 0.9rem !important;
+}
+
+/* ========================================
+   콘텐츠 영역 공통 스타일
+======================================== */
+#posts, #post-page {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+/* ========================================
+   태그 페이지 스타일
+======================================== */
+.tags-container {
+  margin-bottom: 3rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 3rem;
+  justify-content: flex-start;
+}
+
+.tag-item {
+  background-color: white;
+  color: #808080;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-family: 'Noto Sans Korean', sans-serif !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tag-item:hover {
+  background-color: #e58a5b !important;
+  color: white !important;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.tag-section {
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.tag-section.active {
+  display: block;
+}
+
+.tag-title {
+  color: #2e5e4e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e58a5b;
+  padding-bottom: 0.5rem;
+}
+
+.tag-posts {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tag-post-item {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.tag-post-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.tag-post-title a {
+  color: #2e5e4e;
+  text-decoration: none;
+}
+
+.tag-post-title a:hover {
+  color: #e58a5b;
+}
+
+.tag-post-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.tag-post-tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.post-tag {
+  color: #808080;
+  font-size: 0.65rem;
+  margin-right: 0.3rem;
+  background: none;
+  padding: 0;
+  white-space: nowrap;
+  font-family: 'Noto Sans Korean', sans-serif !important;
+}
+
+/* ========================================
+   공통 요소 스타일
+======================================== */
+/* SEO용 숨겨진 텍스트 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* 링크 호버 효과 */
+a {
+  transition: color 0.3s ease !important;
+}
+
+a:hover {
+  color: #e58a5b !important;
+}
+
+/* Strong 태그 색상 */
+strong {
+  color: #e58a5b !important;
+}
+
+/* 포스트 이미지 */
+.post-image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* 이미지 캡션 */
+.image-caption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* ========================================
+   인용문 및 정보박스 스타일
+======================================== */
+/* 기본 마크다운 인용문 */
+blockquote {
+  border-left: 4px solid #e58a5b !important;
+  padding: 0 1.5 0 1.5em !important;
+  margin: 0.8em 0 !important;
+  background: transparent !important;
+  font-style: italic !important;
+  color: #4e5865 !important;
+  border-radius: 0 !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
+blockquote p {
+  margin: 0 !important;
+  line-height: 1.7 !important;
+  color: #4e5865 !important;
+  font-style: italic !important;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0 !important;
+}
+
+blockquote p + p {
+  margin-top: 0.6em !important;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 3em;
+  color: #e58a5b;
+  position: absolute;
+  left: -0.1em;
+  top: -0.3em;
+  font-family: serif;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+/* 그린 정보박스 */
+.info-box {
+  background-color: rgba(46, 94, 78, 0.08) !important;
+  padding: 1.5em !important;
+  border-radius: 8px !important;
+  margin: 1.2em 0 !important;
+  border: none !important;
+  font-style: normal !important;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(46, 94, 78, 0.05) !important;
+}
+
+.info-box p {
+  margin: 0 !important;
+  line-height: 1.6 !important;
+  color: #2e5e4e !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.info-box p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.info-box p + p {
+  margin-top: 0.8em !important;
+}
+
+/* ========================================
+   그리드 및 카드 스타일 (사용 안 함)
+======================================== */
 .grid {
   display: grid;
   gap: 2rem;
@@ -78,7 +421,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* 카드 기본 스타일 */
 .card {
   background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 12px;
@@ -112,7 +454,6 @@ body {
   border-bottom: 1px solid #dee2e6;
 }
 
-/* 섹션 제목 */
 .section-title {
   text-align: center;
   font-size: 2.2rem;
@@ -121,193 +462,6 @@ body {
   font-weight: 700;
 }
 
-/* 푸터 */
-footer {
-  background-color: #2e5e4e !important;
-  color: #fdf6e4;
-  text-align: center;
-  padding: 1.5rem;
-  border-top: 1px solid rgba(46, 94, 78, 0.1);
-  position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 1.5rem 2rem !important;
-  box-sizing: border-box !important;
-  overflow-x: hidden !important;
-}
-
-/* 푸터 링크 스타일 */
-footer a {
-  color: #2e5e4e;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-footer a:hover {
-  color: #e58a5b;
-  text-decoration: underline;
-}
-
-/* 푸터 텍스트 스타일 */
-footer span {
-  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* SEO용 숨겨진 텍스트 */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
-/* 포스트 리스트 제목 색상 */
-#posts li h2 a {
-  color: #2e5e4e !important;
-  text-decoration: none;
-}
-
-#posts li h2 a:hover {
-  color: #e58a5b !important;
-  text-decoration: none;
-}
-
-/* 포스트 제목 전체 스타일 */
-#posts li h2 {
-  color: #2e5e4e !important;
-  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
-}
-
-/* 포스트 목록 제목 크기 조정 */
-#posts li h2 {
-  font-size: 1.4rem !important; /* 기존보다 작게 */
-  margin-bottom: 0.8rem !important;
-}
-
-/* 포스트 목록 내용 글씨 크기 조정 */
-#posts li p {
-  font-size: 0.9rem !important; /* 기존보다 작게 */
-  line-height: 1.5 !important;
-  margin-bottom: 0.5rem !important;
-}
-
-/* 모바일에서 더 작게 */
-@media (max-width: 768px) {
-  #posts li h2 {
-    font-size: 1.2rem !important;
-  }
-  
-  #posts li p {
-    font-size: 0.85rem !important;
-  }
-}
-
-#post-page h1 {
-  text-align: center !important;
-  margin-bottom: 2rem !important;
-}
-
-// Strong 태그 색상 설정
-strong {
-  color: #e58a5b !important;
-}
-
-// 포스트 이미지 스타일
-.post-image {
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 1.5em auto;
-}
-
-// 이미지 캡션 스타일
-.image-caption {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #888;
-  margin-top: 0.5em;
-}
-
-/* 기본 마크다운 인용문 - 오렌지 강조 스타일 */
-blockquote {
-  border-left: 4px solid #e58a5b !important;
-  padding: 0 1.5 0 1.5em !important;
-  margin: 0.8em 0 !important;
-  background: transparent !important;
-  font-style: italic !important;
-  color: #4e5865 !important;
-  border-radius: 0 !important;
-  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
-}
-
-blockquote p {
-  margin: 0 !important;
-  line-height: 1.7 !important;
-  color: #4e5865 !important;
-  font-style: italic !important;
-}
-
-blockquote p:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* 여러 문단이 있는 인용문 처리 */
-blockquote p + p {
-  margin-top: 0.6em !important;
-}
-
-blockquote::before {
-  content: '"';
-  font-size: 3em;
-  color: #e58a5b;
-  position: absolute;
-  left: -0.1em;
-  top: -0.3em;
-  font-family: serif;
-  line-height: 1;
-  opacity: 0.3;
-}
-
-/* 스타일 1: 오렌지 강조 인용문 (Orange Accent Quote) - 삭제됨 */
-
-/* 스타일 2: 그린 정보박스 (Green Info Box) - 핵심 정보용 */
-.info-box {
-  background-color: rgba(46, 94, 78, 0.08) !important;
-  padding: 1.5em !important;
-  border-radius: 8px !important;
-  margin: 1.2em 0 !important;
-  border: none !important;
-  font-style: normal !important;
-  position: relative;
-  box-shadow: 0 2px 8px rgba(46, 94, 78, 0.05) !important;
-}
-
-.info-box p {
-  margin: 0 !important;
-  line-height: 1.6 !important;
-  color: #2e5e4e !important;
-  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
-  font-weight: 500 !important;
-}
-
-.info-box p:last-child {
-  margin-bottom: 0 !important;
-}
-
-.info-box p + p {
-  margin-top: 0.8em !important;
-}
-
-/* 기본 구분선 스타일 */
 .footer-divider {
   border: none;
   border-top: 1px solid #ccd1d9;
@@ -315,13 +469,49 @@ blockquote::before {
   width: 50%;
 }
 
-/* 반응형 */
+/* ========================================
+   반응형 미디어쿼리
+======================================== */
 @media (max-width: 768px) {
+  /* 헤더 */
+  #header {
+    padding: 1rem !important;
+  }
+  
+  #header .site-title {
+    font-size: 1.4rem;
+  }
+  
+  /* 본문 여백 */
+  body {
+    padding-top: 90px !important;
+  }
+  
+  /* 푸터 */
+  footer {
+    padding: 1rem !important;
+  }
+  
+  /* 포스트 목록 */
+  #posts li h2 {
+    font-size: 1.2rem !important;
+  }
+  
+  #posts li p {
+    font-size: 0.85rem !important;
+  }
+  
+  /* 태그 페이지 */
+  .tag-posts {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 그리드 */
   .grid-3 {
     grid-template-columns: 1fr;
   }
   
-  /* 모바일에서 인용문 패딩 조정 */
+  /* 인용문 */
   blockquote {
     padding: 0 1 0 1em !important;
     margin: 0.6em 0 !important;
@@ -331,180 +521,4 @@ blockquote::before {
     padding: 1em !important;
     margin: 1em 0 !important;
   }
-}
-
-@media (max-width: 768px) {
-  #header {
-    padding: 1rem !important;
-  }
-  
-  body {
-    padding-top: 90px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 1rem !important;
-  }
-}
-
-/* 포스트 하단 날짜 오른쪽 정렬 */
-#post-page .by-line {
-  text-align: right !important;
-  display: block !important;
-  margin-top: 2rem !important;
-  color: #7f8c8d !important; /* 연한 회색으로 */
-  font-size: 0.9rem !important;
-}
-
-/* 포스트 내용과 날짜 사이 여백 */
-#post-page .content {
-  margin-bottom: 1rem !important;
-}
-
-/* 콘텐츠 영역 최적화 (기존에 없던 부분) */
-#posts, #post-page {
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
-}
-
-#post-page .content {
-  line-height: 1.7 !important;
-  font-size: 1.05rem !important;
-}
-
-/* 문단 간격 개선 (기존에 없던 부분) */
-#post-page .content p {
-  margin-bottom: 1.5rem !important;
-}
-
-#post-page .content h2,
-#post-page .content h3,
-#post-page .content h4 {
-  margin-top: 3rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
-/* 링크 호버 효과 개선 */
-a {
-  transition: color 0.3s ease !important;
-}
-
-a:hover {
-  color: #e58a5b !important;
-}
-
-/* 태그 페이지 스타일 */
-.tags-container {
-  margin-bottom: 3rem;
-}
-
-.tag-cloud {
- display: flex;
- flex-wrap: wrap;
- gap: 0.3rem;
- margin-bottom: 3rem;
- justify-content: flex-start; /* center → flex-start */
-}
-
-.tag-item {
-  background-color: white;
-  color: #808080;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 0.7rem;
-  font-weight: 500;
-  font-family: 'Noto Sans Korean', sans-serif !important;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.tag-item:hover {
-  background-color: #e58a5b !important;
-  color: white !important; /* !important 추가 */
-  text-decoration: none;
-  transform: translateY(-2px);
-}
-
-.tag-section {
-  margin-bottom: 3rem;
-  display: none;
-}
-
-.tag-section.active {
-  display: block;
-}
-
-.tag-title {
-  color: #2e5e4e;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #e58a5b;
-  padding-bottom: 0.5rem;
-}
-
-.tag-posts {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2열 그리드 */
-  gap: 1rem; /* 간격 */
-}
-
-.tag-post-item {
-  margin-bottom: 1rem; /* 세로 간격 복원 */
-  padding: 0.8rem; /* 패딩 줄이기 */
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-  word-wrap: break-word; /* 긴 텍스트 줄바꿈 */
-  overflow-wrap: break-word;
-}
-
-/* 모바일에서는 1열 */
-@media (max-width: 768px) {
-  .tag-posts {
-    grid-template-columns: 1fr;
-  }
-}
-
-.tag-post-title {
-  font-size: 1rem; /* 크기 줄이기 */
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  line-height: 1.4; /* 줄간격 조정 */
-}
-
-.tag-post-title a {
-  color: #2e5e4e;
-  text-decoration: none;
-}
-
-.tag-post-title a:hover {
-  color: #e58a5b;
-}
-
-.tag-post-date {
-  color: #7f8c8d;
-  font-size: 0.9rem;
-}
-
-.tag-post-tags {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.post-tag {
-  color: #808080;
-  font-size: 0.65rem;
-  margin-right: 0.3rem;
-  background: none;
-  padding: 0;
-  white-space: nowrap;
-  font-family: 'Noto Sans Korean', sans-serif !important;
 }
