@@ -522,3 +522,22 @@ blockquote::before {
     margin: 1em 0 !important;
   }
 }
+
+/* 포스트 이미지 반응형 */
+#post-page img,
+.post-content img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  #post-page img,
+  .post-content img {
+    max-width: 95% !important;
+    margin: 0.5rem auto;
+  }
+}
