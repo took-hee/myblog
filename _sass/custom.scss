@@ -402,22 +402,22 @@ a:hover {
 }
 
 .tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 3rem;
-  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.3rem;
+ margin-bottom: 3rem;
+ justify-content: flex-start; /* center → flex-start */
 }
 
 .tag-item {
   background-color: white;
   color: #808080;
-  padding: 0.2rem 0.6rem; /* 기존: 0.5rem 1rem */
-  border-radius: 12px; /* 기존: 20px */
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
   text-decoration: none;
-  font-size: 0.7rem; /* 기존: 0.9rem */
+  font-size: 0.7rem;
   font-weight: 500;
-  font-family: 'Verdana', sans-serif !important; /* !important 추가 */
+  font-family: 'Noto Sans Korean', sans-serif !important;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -450,20 +450,41 @@ a:hover {
 .tag-posts {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열 그리드 */
+  gap: 1rem; /* 간격 */
 }
 
 .tag-post-item {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 1rem; /* 세로 간격 복원 */
+  padding: 0.8rem; /* 패딩 줄이기 */
   background: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
-  border-left: 4px solid #2e5e4e;
+  word-wrap: break-word; /* 긴 텍스트 줄바꿈 */
+  overflow-wrap: break-word;
+}
+
+/* 모바일에서는 1열 */
+@media (max-width: 768px) {
+  .tag-posts {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tag-post-title {
-  font-size: 1.1rem;
+  font-size: 1rem; /* 크기 줄이기 */
   font-weight: 600;
   margin-bottom: 0.5rem;
+  line-height: 1.4; /* 줄간격 조정 */
+}
+
+.tag-post-title a {
+  color: #2e5e4e;
+  text-decoration: none;
+}
+
+.tag-post-title a:hover {
+  color: #e58a5b;
 }
 
 .tag-post-date {
@@ -473,13 +494,17 @@ a:hover {
 
 .tag-post-tags {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 .post-tag {
-  background-color: #e58a5b;
-  color: white;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.7rem;
-  margin-right: 0.5rem;
+  color: #808080;
+  font-size: 0.65rem;
+  margin-right: 0.3rem;
+  background: none;
+  padding: 0;
+  white-space: nowrap;
+  font-family: 'Noto Sans Korean', sans-serif !important;
 }
