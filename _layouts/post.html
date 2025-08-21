@@ -7,6 +7,48 @@ layout: default
 
 		{{ content }}
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: "%Y.%m.%d" }}</time>	
+		<!-- 공유 섹션 -->
+	<div class="share-section">
+	<h3>🌱 도움이 됐다면 공유해 주세요</h3>
+	<p>이 글을 읽고 생각나는 사람이 있다면 도움이 될지도 몰라요</p>
+	
+	<div class="share-buttons">
+		<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+		📘 페이스북
+		</a>
+		<a class="share-btn twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" target="_blank">
+		🐦 트위터(엑스)
+		</a>
+		<a class="share-btn kakao" href="javascript:void(0)" onclick="shareKakao()">
+		🔗 링크 복사
+		</a>
+
+		<script>
+		function shareKakao() {
+		const url = window.location.href;
+		const text = `{{ page.title }} - {{ site.title }}`;
+		navigator.clipboard.writeText(`${text}\n${url}`);
+		alert('링크가 복사되었습니다.');
+		}
+		</script>
+	</div>
+	
+	<div class="share-message">
+		💚 공유해주셔서 감사합니다!
+	</div>
+	</div>
+
+	<script>
+	function copyLink() {
+	const url = window.location.href;
+	navigator.clipboard.writeText(url).then(() => {
+		const btn = document.querySelector('.copy-link');
+		const original = btn.textContent;
+		btn.textContent = '✅ 복사완료';
+		setTimeout(() => btn.textContent = original, 2000);
+	});
+	}
+	</script>
 	</div>
 </article>
 
