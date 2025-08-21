@@ -410,20 +410,21 @@ a:hover {
 }
 
 .tag-item {
-  background-color: #2e5e4e;
-  color: #fdf6e4;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  background-color: white;
+  color: #808080;
+  padding: 0.2rem 0.6rem; /* 기존: 0.5rem 1rem */
+  border-radius: 12px; /* 기존: 20px */
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.7rem; /* 기존: 0.9rem */
   font-weight: 500;
+  font-family: 'Verdana', sans-serif !important; /* !important 추가 */
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .tag-item:hover {
-  background-color: #e58a5b;
-  color: white;
+  background-color: #e58a5b !important;
+  color: white !important; /* !important 추가 */
   text-decoration: none;
   transform: translateY(-2px);
 }
@@ -439,7 +440,7 @@ a:hover {
 
 .tag-title {
   color: #2e5e4e;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #e58a5b;

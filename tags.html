@@ -6,14 +6,17 @@ permalink: /tags/
 
 <h1 class="sr-only">태그별 글 목록</h1>
 
-<div class="tags-container">
-  <!-- 태그 클라우드 -->
-  <div class="tag-cloud">
-    {% assign tags = site.tags | sort %}
-    {% for tag in tags %}
-      <a href="#" class="tag-item" data-tag="{{ tag[0] }}">#{{ tag[0] }} ({{ tag[1] | size }})</a>
-    {% endfor %}
-  </div>
+<div class="tag-cloud">
+  {% assign tags = site.tags | sort %}
+  {% assign all_tag = "전체," | append: site.posts.size %}
+  
+  <!-- 전체를 첫 번째로 -->
+  <a href="#" class="tag-item" data-tag="all">#전체 ({{ site.posts | size }})</a>
+  
+  {% for tag in tags %}
+    <a href="#" class="tag-item" data-tag="{{ tag[0] }}">#{{ tag[0] }} ({{ tag[1] | size }})</a>
+  {% endfor %}
+</div>
 
   <!-- 전체 글 목록 -->
   <div id="all-posts" class="tag-section active">
@@ -58,25 +61,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const tagItems = document.querySelectorAll('.tag-item');
   const tagSections = document.querySelectorAll('.tag-section');
   
-  tagItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetTag = this.dataset.tag;
-      
-      tagSections.forEach(section => {
-        section.classList.remove('active');
-      });
-      
+tagItems.forEach(item => {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetTag = this.dataset.tag;
+    
+    tagSections.forEach(section => {
+      section.classList.remove('active');
+    });
+    
+    if (targetTag === 'all') {
+      document.getElementById('all-posts').classList.add('active');
+    } else {
       const targetSection = document.getElementById('tag-' + targetTag.replace(/\s+/g, '-').toLowerCase());
       if (targetSection) {
         targetSection.classList.add('active');
       }
-      
-      tagItems.forEach(tagItem => {
-        tagItem.style.backgroundColor = '#2e5e4e';
-      });
-      this.style.backgroundColor = '#e58a5b';
+    }
+    
+    // 버튼 색상 변경
+    tagItems.forEach(tagItem => {
+    tagItem.style.backgroundColor = 'white'; // #e58a5b → white
+    tagItem.style.color = '#808080';
     });
+    this.style.backgroundColor = '#e58a5b';
+    this.style.color = 'white';
   });
+});
 });
 </script>
