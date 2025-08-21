@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Tags
+title: "Tags"
+permalink: /tags/
 ---
 
 <h1 class="sr-only">태그별 글 목록</h1>
