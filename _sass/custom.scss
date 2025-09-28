@@ -358,17 +358,10 @@ strong {
 }
 
 /* 크기별 이미지 클래스 (수정된 제안) */
-.img-large {
-  max-width: 100%; /* 콘텐츠 너비에 꽉 차게 */
-}
+.img-large { max-width: 100% !important; }
+.img-medium { max-width: 70% !important; }
+.img-small { max-width: 30% !important; }
 
-.img-medium {
-  max-width: 70%; /* 기본보다 큰 중간 크기 */
-}
-
-.img-small {
-  max-width: 30%; /* 기본보다 작은 크기 */
-}
 
 /* 이미지 캡션 */
 .image-caption {
