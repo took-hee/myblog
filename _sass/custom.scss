@@ -350,8 +350,8 @@ strong {
 
 /* 포스트 이미지 */
 .post-image {
-  max-width: 350px; /* 기본 크기 */
-  height: auto;
+  max-width: 100% !important; /* 콘텐츠 영역에 맞춤 */
+  height: auto !important;
   border-radius: 8px;
   display: block;
   margin: 1.5em auto;
