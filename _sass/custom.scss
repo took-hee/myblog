@@ -357,6 +357,30 @@ strong {
   margin: 1.5em auto;
 }
 
+/* myblog/_sass/custom.scss 파일에 추가 또는 수정 */
+
+/* 포스트 이미지 */
+.post-image {
+  max-width: 500px; /* 기본 크기 */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* 크기별 이미지 클래스 (수정된 제안) */
+.img-large {
+  max-width: 100%; /* 콘텐츠 너비에 꽉 차게 */
+}
+
+.img-medium {
+  max-width: 75%; /* 기본보다 큰 중간 크기 */
+}
+
+.img-small {
+  max-width: 50%; /* 기본보다 작은 크기 */
+}
+
 /* 이미지 캡션 */
 .image-caption {
   text-align: center;
