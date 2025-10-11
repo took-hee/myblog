@@ -348,6 +348,18 @@ strong {
   color: #e58a5b !important;
 }
 
+/* 포스트 콘텐츠 내 링크에 밑줄 추가 */
+#post-page .content a {
+  text-decoration: underline !important;
+  text-underline-offset: 2px; /* 밑줄과 텍스트 사이 간격 */
+  text-decoration-thickness: 1px; /* 밑줄 두께 */
+}
+
+/* 호버 시 밑줄 스타일 유지 */
+#post-page .content a:hover {
+  text-decoration: underline !important;
+}
+
 /* 포스트 이미지 */
 .post-image {
   max-width: 100% !important; /* 콘텐츠 영역에 맞춤 */
