@@ -1,0 +1,25 @@
+{% if page.previous or page.next %}
+<div class="related-posts-navigation">
+  
+  {% if page.next %}
+  <div class="nav-post-item prev-post">
+    <div class="nav-label">← 다음글</div>
+    <div class="nav-post-title">
+      <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+    </div>
+    <div class="nav-post-date">{{ page.next.date | date: "%Y.%m.%d" }}</div>
+  </div>
+  {% endif %}
+  
+  {% if page.previous %}
+  <div class="nav-post-item next-post">
+    <div class="nav-label">이전글 →</div>
+    <div class="nav-post-title">
+      <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    </div>
+    <div class="nav-post-date">{{ page.previous.date | date: "%Y.%m.%d" }}</div>
+  </div>
+  {% endif %}
+  
+</div>
+{% endif %}

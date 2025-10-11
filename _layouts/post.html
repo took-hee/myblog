@@ -7,7 +7,11 @@ layout: default
 
 		{{ content }}
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: "%Y.%m.%d" }}</time>	
-		<!-- 공유 섹션 -->
+	
+	<!-- 관련 포스트 추천 -->
+	{% include related-posts.html %}
+	
+	<!-- 공유 섹션 -->
 	<div class="share-section">
 	<h3>🌱 도움이 됐다면 공유해 주세요</h3>
 	<p>이 글을 읽고 생각나는 사람이 있다면 도움이 될지도 몰라요</p>
