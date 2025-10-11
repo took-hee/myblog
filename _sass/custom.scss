@@ -61,6 +61,27 @@ body {
   color: #e58a5b !important;
 }
 
+/* RSS 버튼 스타일 */
+.rss-link {
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-size: 0.9rem !important;
+  color: #2e5e4e !important;
+  text-decoration: none !important;
+  padding: 0.3rem 0.6rem !important;
+  margin-left: 1rem !important;
+  border: 1px solid rgba(46, 94, 78, 0.3) !important;
+  border-radius: 15px !important;
+  transition: all 0.3s ease !important;
+  background-color: rgba(253, 246, 228, 0.8) !important;
+}
+
+.rss-link:hover {
+  background-color: #e58a5b !important;
+  color: white !important;
+  border-color: #e58a5b !important;
+  transform: translateY(-1px) !important;
+}
+
 /* ========================================
    푸터 스타일
 ======================================== */
