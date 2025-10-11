@@ -381,6 +381,19 @@ strong {
   text-decoration: underline !important;
 }
 
+/* 공유 섹션 링크에는 밑줄 제거 */
+#post-page .share-section a,
+.share-section a,
+.share-section .share-btn {
+  text-decoration: none !important;
+}
+
+#post-page .share-section a:hover,
+.share-section a:hover,
+.share-section .share-btn:hover {
+  text-decoration: none !important;
+}
+
 /* 포스트 이미지 */
 .post-image {
   max-width: 100% !important; /* 콘텐츠 영역에 맞춤 */
