@@ -16,6 +16,12 @@ kramdown:
   parse_span_html: true     # HTML 인라인 파싱
   input: GFM               # GitHub Flavored Markdown
   syntax_highlighter: rouge
+  extensions:
+    - strikethrough
+    - tables
+    - autolink
+    - with_toc_data
+    - fenced_code_blocks
 source: .
 destination: ./_site
 permalink: /:title

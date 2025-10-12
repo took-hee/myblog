@@ -53,6 +53,15 @@ em, i {
   color: #C9A96E !important;
 }
 
+/* 하이라이트 스타일 - 전통적 */
+mark {
+  background-color: rgba(201, 169, 110, 0.3) !important;
+  color: #53584C !important;
+  padding: 0.1em 0.2em !important;
+  border-radius: 2px !important;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+}
+
 html, body, #wrap, #container, main {
   background-color: #DCE7D5 !important;
   min-height: 100vh;
@@ -503,22 +512,40 @@ strong {
   text-decoration-thickness: 1px; /* 밑줄 두께 */
 }
 
+/* 본문 링크 앞에 🔗 이모지 추가 */
+#post-page .content a::before {
+  content: "🔗";
+  font-size: 0.8em;
+  text-decoration: none !important;
+  margin-right: 0.3em;
+}
+
 /* 호버 시 밑줄 스타일 유지 */
 #post-page .content a:hover {
   text-decoration: underline !important;
 }
 
-/* 공유 섹션 링크에는 밑줄 제거 */
+/* 공유 섹션과 관련글 네비게이션 링크에는 밑줄과 이모지 제거 */
 #post-page .share-section a,
 .share-section a,
-.share-section .share-btn {
+.share-section .share-btn,
+.related-posts-navigation a,
+.nav-post-title a {
   text-decoration: none !important;
 }
 
 #post-page .share-section a:hover,
 .share-section a:hover,
-.share-section .share-btn:hover {
+.share-section .share-btn:hover,
+.related-posts-navigation a:hover,
+.nav-post-title a:hover {
   text-decoration: none !important;
+}
+
+/* 관련글 네비게이션 링크에는 이모지 제거 */
+.related-posts-navigation a::before,
+.nav-post-title a::before {
+  content: none !important;
 }
 
 /* 포스트 이미지 */
@@ -940,87 +967,83 @@ blockquote::before {
 }
 
 /* ========================================
-   관련 포스트 추천 스타일
+   관련 포스트 추천 스타일 - 단순 텍스트
 ======================================== */
 .related-posts-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
+  padding: 0;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
 }
 
 .nav-post-item {
-  background: transparent;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(46, 94, 78, 0.2);
-  text-align: center;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0.8rem !important;
+  transition: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .nav-post-item:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: none !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
-.nav-post-item.prev-post {
-  text-align: left;
-}
-
+.nav-post-item.prev-post,
 .nav-post-item.next-post {
-  text-align: right;
+  text-align: left !important;
 }
 
 .nav-label {
-  font-size: 0.8rem;
-  color: #7f8c8d;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem !important;
+  color: #97A884 !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.3rem !important;
+  margin-right: 0.5rem !important;
+  display: inline !important;
 }
 
 .nav-post-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  display: inline !important;
 }
 
 .nav-post-title a {
-  color: #2e5e4e;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: #53584C !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
 }
 
 .nav-post-title a:hover {
-  color: #e58a5b;
+  color: #97A884 !important;
+  text-decoration: none !important;
 }
 
 .nav-post-date {
-  color: #7f8c8d;
-  font-size: 0.8rem;
-  font-weight: 400;
+  display: none !important;
 }
 
-/* 모바일 반응형 */
+/* 모바일에서도 동일하게 */
 @media (max-width: 768px) {
   .related-posts-navigation {
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0 1.5rem 0;
   }
   
   .nav-post-item {
-    padding: 0.8rem;
-    text-align: center !important;
+    margin-bottom: 0.6rem !important;
   }
   
-  .nav-post-item.prev-post,
-  .nav-post-item.next-post {
-    text-align: center !important;
+  .nav-label {
+    font-size: 0.8rem !important;
   }
   
   .nav-post-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem !important;
   }
 }
