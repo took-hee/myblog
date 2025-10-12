@@ -103,8 +103,12 @@ body {
 }
 
 /* 네비게이션 링크 위치 조정 */
-#nav-links {
-  right: 2rem !important;
+#header #nav-links {
+  right: 4rem !important;
+}
+
+#header .inner #nav-links {
+  right: 4rem !important;
 }
 
 /* Tags/RSS 버튼 스타일 */
@@ -114,6 +118,7 @@ body {
   color: #53584C !important;
   text-decoration: none !important;
   margin-left: 1rem !important;
+  margin-right: 3rem !important;
   transition: color 0.3s ease !important;
 }
 
@@ -300,7 +305,7 @@ body #post-page h2 + h3 {
 }
 
 .tag-item:hover {
-  background-color: #e58a5b !important;
+  background-color: #DC8D6C !important;
   color: white !important;
   text-decoration: none;
   transform: translateY(-2px);
@@ -320,7 +325,6 @@ body #post-page h2 + h3 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #e58a5b;
   padding-bottom: 0.5rem;
 }
 
