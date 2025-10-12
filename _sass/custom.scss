@@ -10,10 +10,51 @@
 /* 전체 사이트 폰트 및 배경색 적용 */
 html, body, * {
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 헤딩 색상 */
+h1 {
+  color: #53584C !important;
+  text-align: center !important;
+  border-bottom: 3px solid #53584C !important;
+  padding-bottom: 0.3em !important;
+  margin-bottom: 1em !important;
+}
+
+h2 {
+  color: #97A884 !important;
+  position: relative !important;
+  padding-bottom: 0.5em !important;
+  margin-top: 2em !important;
+  margin-bottom: 1em !important;
+}
+
+h2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 60px !important;
+  height: 2px !important;
+  background-color: #97A884 !important;
+}
+
+h3, h4, h5, h6 {
+  color: #97A884 !important;
+}
+
+/* 텍스트 스타일 색상 */
+strong, b {
+  color: #DC8D6C !important;
+}
+
+em, i {
+  color: #C9A96E !important;
 }
 
 html, body, #wrap, #container, main {
-  background-color: #fdf6e4 !important;
+  background-color: #DCE7D5 !important;
   min-height: 100vh;
 }
 
@@ -25,7 +66,7 @@ body {
    헤더 스타일
 ======================================== */
 #header {
-  background-color: rgba(253, 246, 228, 0.95) !important;
+  background-color: #DCE7D5 !important;
   backdrop-filter: blur(10px);
   position: fixed !important;
   top: 0 !important;
@@ -47,7 +88,7 @@ body {
 #header .site-title {
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
   font-weight: 700 !important;
-  color: #2e5e4e !important;
+  color: #53584C !important;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -61,25 +102,23 @@ body {
   color: #e58a5b !important;
 }
 
-/* RSS 버튼 스타일 */
+/* 네비게이션 링크 위치 조정 */
+#nav-links {
+  right: 2rem !important;
+}
+
+/* Tags/RSS 버튼 스타일 */
 .rss-link {
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
   font-size: 0.9rem !important;
-  color: #2e5e4e !important;
+  color: #53584C !important;
   text-decoration: none !important;
-  padding: 0.3rem 0.6rem !important;
   margin-left: 1rem !important;
-  border: 1px solid rgba(46, 94, 78, 0.3) !important;
-  border-radius: 15px !important;
-  transition: all 0.3s ease !important;
-  background-color: rgba(253, 246, 228, 0.8) !important;
+  transition: color 0.3s ease !important;
 }
 
 .rss-link:hover {
-  background-color: #e58a5b !important;
-  color: white !important;
-  border-color: #e58a5b !important;
-  transform: translateY(-1px) !important;
+  color: #DC8D6C !important;
 }
 
 /* ========================================
@@ -122,19 +161,19 @@ footer span {
    포스트 목록 스타일
 ======================================== */
 #posts li h2 {
-  color: #2e5e4e !important;
+  color: #97A884 !important;
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
   font-size: 1.4rem !important;
   margin-bottom: 0.8rem !important;
 }
 
 #posts li h2 a {
-  color: #2e5e4e !important;
+  color: #97A884 !important;
   text-decoration: none;
 }
 
 #posts li h2 a:hover {
-  color: #e58a5b !important;
+  color: #DC8D6C !important;
   text-decoration: none;
 }
 
@@ -156,7 +195,7 @@ body #post-page h2 {
 
 #post-page h1 {
   text-align: center !important;
-  color: #e58a5b !important;
+  color: #53584C !important;
   margin-bottom: 0 !important;
 }
 
@@ -433,19 +472,21 @@ p.image-caption {
 ======================================== */
 /* 기본 마크다운 인용문 */
 blockquote {
-  border-left: 4px solid #e58a5b !important;
-  padding: 0 1.5 0 1.5em !important;
-  margin: 0.8em 0 !important;
+  border-left: 4px solid #53584C !important;
+  padding: 0 0 0 1em !important;
+  margin: 0 !important;
   background: transparent !important;
   font-style: italic !important;
   color: #4e5865 !important;
   border-radius: 0 !important;
   font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif !important;
+  line-height: 2 !important;
 }
 
 blockquote p {
   margin: 0 !important;
-  line-height: 1.7 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
   color: #4e5865 !important;
   font-style: italic !important;
 }
