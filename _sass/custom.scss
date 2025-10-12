@@ -548,13 +548,49 @@ strong {
   content: none !important;
 }
 
+/* ========================================
+   리스트 스타일
+======================================== */
+/* 본문 리스트 불릿 스타일 */
+#post-page .content ul {
+  list-style: none !important;
+  padding-left: 1.5em !important;
+  margin: 1em 0 !important;
+}
+
+#post-page .content ul li {
+  position: relative !important;
+  margin-bottom: 0.5em !important;
+  line-height: 1.7 !important;
+}
+
+#post-page .content ul li::before {
+  content: "▪" !important;
+  color: #53584C !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  left: -1.2em !important;
+  top: 0 !important;
+}
+
+/* 중첩 리스트 */
+#post-page .content ul ul {
+  margin: 0.5em 0 !important;
+  padding-left: 1.2em !important;
+}
+
+#post-page .content ul ul li::before {
+  content: "◦" !important;
+  color: #97A884 !important;
+}
+
 /* 포스트 이미지 */
 .post-image {
   max-width: 100% !important; /* 콘텐츠 영역에 맞춤 */
   height: auto !important;
   border-radius: 8px;
   display: block;
-  margin: 1.5em auto;
+  margin: 1.5em auto 10px auto;
 }
 
 /* 크기별 이미지 클래스 (수정된 제안) */
@@ -563,23 +599,71 @@ strong {
 .img-small { max-width: 30% !important; }
 
 
-/* 이미지 캡션 */
-.image-caption {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #888;
-  margin-top: 0.2em; /* 기존 0.5em에서 줄임 */
+/* 이미지 캡션만 - 이미지 바로 다음의 em 태그에만 적용 */
+#post-page .content .post-image + em,
+.post-image + em {
+  text-align: center !important;
+  font-size: 0.7rem !important; /* 더 작게 */
+  color: #888 !important;
+  margin-top: 0.02em !important; /* 간격 더 줄임 */
+  margin-bottom: 10px !important; /* 하단 마진 8px로 */
+  font-family: 'Noto Sans Korean', sans-serif !important;
+  font-weight: 400 !important; /* 볼드 제거 */
+  font-style: italic !important; /* 이탤릭 유지 */
+  display: block !important;
 }
 
-/* 이미지 다음 캡션의 상단 마진 제거 */
-.post-image + p {
-  margin-top: 0.2em !important;
+/* .image-caption 클래스가 있는 요소들 */
+#post-page .content .image-caption,
+#post-page .image-caption,
+.content .image-caption {
+  text-align: center !important;
+  font-size: 0.7rem !important; /* 더 작게 */
+  color: #888 !important;
+  margin-top: 0.02em !important; /* 간격 더 줄임 */
+  margin-bottom: 8px !important; /* 하단 마진 8px로 */
+  font-family: 'Noto Sans Korean', sans-serif !important;
+  font-weight: 400 !important;
 }
 
-/* 캡션 p 태그 자체 마진 조정 */
-p.image-caption {
-  margin-top: 0.1em !important;
-  margin-bottom: 1em !important;
+/* p 태그 형태의 이미지 캡션 */
+#post-page .content p.image-caption,
+.content p.image-caption {
+  margin-top: 0.01em !important; /* 간격 더 줄임 */
+  margin-bottom: 8px !important; /* 하단 마진 8px로 */
+  font-family: 'Noto Sans Korean', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 0.7rem !important; /* 더 작게 */
+}
+
+/* SEO 친화적인 figure + figcaption 스타일 */
+#post-page .content figure.image-figure,
+.content figure.image-figure {
+  margin: 1.5em auto 10px auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+#post-page .content figure.image-figure img,
+.content figure.image-figure img {
+  margin: 0 auto !important; /* 중앙 정렬 강제 */
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+#post-page .content figcaption.image-caption,
+.content figcaption.image-caption {
+  text-align: center !important;
+  font-size: 0.7rem !important;
+  color: #888 !important;
+  margin-top: 0.02em !important;
+  margin-bottom: 10px !important;
+  font-family: 'Noto Sans Korean', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important; /* 이탤릭 제거 */
 }
 
 /* ========================================
@@ -820,14 +904,17 @@ blockquote::before {
   }
 }
 
-/* 포스트 이미지 반응형 */
+/* 포스트 이미지 반응형 - 모든 이미지 중앙 정렬 */
 #post-page img,
-.post-content img {
+.post-content img,
+#post-page .content img,
+.content img {
   max-width: 100% !important;
   height: auto !important;
   width: auto !important;
-  display: block;
-  margin: 1rem auto;
+  display: block !important;
+  margin: 1rem auto 10px auto !important;
+  text-align: center !important;
 }
 
 /* 모바일 최적화 */
@@ -835,7 +922,7 @@ blockquote::before {
   #post-page img,
   .post-content img {
     max-width: 95% !important;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 8px auto;
   }
 }
 
