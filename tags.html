@@ -9,12 +9,31 @@ permalink: /tags/
 <div class="tag-cloud">
   {% assign tags = site.tags | sort %}
   {% assign all_tag = "전체," | append: site.posts.size %}
+  {% assign max_posts = 0 %}
+  {% for tag in site.tags %}
+    {% if tag[1].size > max_posts %}
+      {% assign max_posts = tag[1].size %}
+    {% endif %}
+  {% endfor %}
   
   <!-- 전체를 첫 번째로 -->
-  <a href="#" class="tag-item" data-tag="all">#전체 ({{ site.posts | size }})</a>
+  <a href="#" class="tag-item tag-size-largest" data-tag="all">전체 ({{ site.posts | size }})</a>
   
   {% for tag in tags %}
-    <a href="#" class="tag-item" data-tag="{{ tag[0] }}">#{{ tag[0] }} ({{ tag[1] | size }})</a>
+    {% assign post_count = tag[1].size %}
+    {% assign size_ratio = post_count | times: 100.0 | divided_by: max_posts %}
+    {% if size_ratio >= 80 %}
+      {% assign size_class = "tag-size-largest" %}
+    {% elsif size_ratio >= 60 %}
+      {% assign size_class = "tag-size-large" %}
+    {% elsif size_ratio >= 40 %}
+      {% assign size_class = "tag-size-medium" %}
+    {% elsif size_ratio >= 20 %}
+      {% assign size_class = "tag-size-small" %}
+    {% else %}
+      {% assign size_class = "tag-size-smallest" %}
+    {% endif %}
+    <a href="#" class="tag-item {{ size_class }}" data-tag="{{ tag[0] }}">{{ tag[0] }} ({{ post_count }})</a>
   {% endfor %}
 </div>
 
@@ -81,11 +100,17 @@ tagItems.forEach(item => {
     
     // 버튼 색상 변경
     tagItems.forEach(tagItem => {
-    tagItem.style.backgroundColor = 'white'; // #e58a5b → white
-    tagItem.style.color = '#808080';
+    tagItem.style.backgroundColor = '#fdfdfa';
+    tagItem.style.color = '#53584C';
+    tagItem.style.borderColor = '#e8ede6';
+    tagItem.style.transform = 'none';
+    tagItem.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)';
     });
     this.style.backgroundColor = '#DC8D6C';
     this.style.color = 'white';
+    this.style.borderColor = '#DC8D6C';
+    this.style.transform = 'translateY(-3px) scale(1.03)';
+    this.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
   });
 });
 });
